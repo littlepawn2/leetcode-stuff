@@ -6,7 +6,16 @@ def maxArea(height) -> int:
     for i in range(num-1):
         for j in range(i+1, num):
             if height[i] > height[j]:
-                bigHeight = height[j]
+                smallHeight = height[j]
             else:
-                bigHeight = height[i]
+                smallHeight = height[i]
+                
+            area = (j-i) * smallHeight
+            
+            if maxArea < area:
+                maxArea = area
+    
+    return maxArea
+                
+            
                 
