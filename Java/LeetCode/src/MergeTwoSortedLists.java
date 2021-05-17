@@ -1,4 +1,3 @@
-import MergekSortedLists.ListNode;
 
 public class MergeTwoSortedLists {
 
